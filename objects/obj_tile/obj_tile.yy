@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tile",
-    "path": "sprites/spr_tile/spr_tile.yy",
+    "name": "spr_tileMask",
+    "path": "sprites/spr_tileMask/spr_tileMask.yy",
   },
   "solid": true,
   "visible": true,
@@ -27,14 +27,12 @@
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"obj_tile","path":"objects/obj_tile/obj_tile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":61,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_tile","path":"objects/obj_tile/obj_tile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":60,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_tile","path":"objects/obj_tile/obj_tile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":6,"collisionObjectId":null,"parent":{"name":"obj_tile","path":"objects/obj_tile/obj_tile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"parent":{"name":"obj_tile","path":"objects/obj_tile/obj_tile.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "tiles",
+    "path": "folders/Objects/tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_tile",

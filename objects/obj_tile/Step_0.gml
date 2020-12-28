@@ -12,21 +12,13 @@ switch(action) {
 		else {
 			image_angle = endAngle;
 			action = ACTION_TYPES.IDLE;
+			global.moveCount += 1;
 		}
-		break;
-		
-	case ACTION_TYPES.DRAGGING:
-		//show_debug_message("ACTION_TYPES.DRAGGING");
-		depth = initialDepth - 1;
-		x = mouse_x;
-		y = mouse_y;
 		break;
 		
 	case ACTION_TYPES.CHANGING_POSITION:
 		depth = initialDepth - 1;
 		
-		//show_debug_message("ACTION_TYPES.CHANGING_POSITION");
-	
 		var moveDir = point_direction(x, y, endX, endY);
 		var hsp = lengthdir_x(moveSpeed, moveDir);
 		var vsp = lengthdir_y(moveSpeed, moveDir);
@@ -49,22 +41,10 @@ switch(action) {
 
 		break;
 		
-	default:
-		if (global.tiles.activeTile == id) {
-			depth = initialDepth - 1;
-	
-			if (global.board.activeCell.x != undefined
-				and global.board.activeCell.y != undefined
-			){
-				action = ACTION_TYPES.CHANGING_POSITION;
-			}
-		} 
-		
-		if (global.tiles.activeTile 
-			&& global.tiles.activeTile != id
-		) {
-			depth = initialDepth;
-		}
+	default:		
+		depth = ctr_tiles.activeTile == id ? 
+			initialDepth - 1 
+			: initialDepth;
 		
 		break;
 }

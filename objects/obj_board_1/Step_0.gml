@@ -2,7 +2,7 @@ var correctOrder = true;
 
 for (var row = 0; row < array_height_2d(board); row++) {
 	for (var cell = 0; cell < array_length_2d(board, row); cell++) {
-		if (board[row][cell] == 1) {
+		if (board[row][cell] != 0) {
 			var currentTile = scr_getTileFromGrid(row, cell, cellSize);
 			
 			if (!instance_exists(currentTile)) {

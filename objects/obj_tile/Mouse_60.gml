@@ -1,5 +1,5 @@
 // Rotate tile if active
-if (global.tiles.activeTile == id 
+if (ctr_tiles.activeTile == id 
 	&& action == ACTION_TYPES.IDLE 
 ) {
 	action = ACTION_TYPES.ROTATING;

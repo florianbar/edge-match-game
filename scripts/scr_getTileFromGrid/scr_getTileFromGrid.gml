@@ -6,8 +6,8 @@
  * @return {instance} instance of tile or noone
  */
 function scr_getTileFromGrid(rowIndex, cellIndex, cellSize) {
-	var posX = obj_grid.x + (cellIndex * cellSize) + cellSize/2;
-	var posY = obj_grid.y + (rowIndex * cellSize) + cellSize/2;
+	var posX = x + (cellIndex * cellSize) + cellSize/2;
+	var posY = y + (rowIndex * cellSize) + cellSize/2;
 	var tile = instance_nearest(posX, posY, obj_tile);
 	
 	if (instance_exists(tile) 
