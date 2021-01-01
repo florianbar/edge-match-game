@@ -1,4 +1,4 @@
-function _swapTilePositionsOnGrid(gridRef, currentTileId, activeTileId) 
+function _swapTilePositionsOnGrid(gridRef, currentTileId, selectedTileId) 
 {
 	for (var _y = 0; _y < ds_grid_height(gridRef); _y++) 
 	{
@@ -8,9 +8,9 @@ function _swapTilePositionsOnGrid(gridRef, currentTileId, activeTileId)
 			
 			if (tileId == currentTileId) 
 			{
-				ds_grid_set(gridRef, _x, _y, activeTileId);
+				ds_grid_set(gridRef, _x, _y, selectedTileId);
 			} 
-			else if (tileId == activeTileId) 
+			else if (tileId == selectedTileId) 
 			{
 				ds_grid_set(gridRef, _x, _y, currentTileId);
 			}

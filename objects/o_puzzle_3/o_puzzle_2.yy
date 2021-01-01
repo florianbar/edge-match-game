@@ -18,7 +18,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"o_puzzle_1","path":"objects/o_puzzle_1/o_puzzle_1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"o_puzzle_2","path":"objects/o_puzzle_2/o_puzzle_2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -27,7 +27,7 @@
     "path": "folders/Objects/puzzles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_puzzle_1",
+  "name": "o_puzzle_2",
   "tags": [],
   "resourceType": "GMObject",
 }

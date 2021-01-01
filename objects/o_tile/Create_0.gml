@@ -1,15 +1,17 @@
+active = true;
+
 tileId = 0;
 sides = [];
 
 initialDepth = -1000;
 depth = initialDepth;
 
-ACTION_TYPES = {
+STATE_TYPES = {
 	IDLE: "IDLE",
 	ROTATING: "ROTATING",
 	CHANGING_POSITION: "CHANGING_POSITION",
 };
-action = ACTION_TYPES.IDLE;
+state = STATE_TYPES.IDLE;
 
 moveSpeed = 5;
 endX = undefined;

@@ -6,6 +6,8 @@ if (currentPuzzleIndex > -1
 	var gridX	 = puzzles[| currentPuzzleIndex].gridX;
 	var gridY	 = puzzles[| currentPuzzleIndex].gridY;
 	var tileSize = puzzles[| currentPuzzleIndex].tileSize;
+	
+	draw_set_colour(c_white);
 
 	for (var _y = 0; _y < ds_grid_height(grid); _y++) 
 	{
@@ -18,7 +20,6 @@ if (currentPuzzleIndex > -1
 				var x2 = gridX + ((_x + 1) * (tileSize - 1)) + (_x * 2);
 				var y2 = gridY + ((_y + 1) * (tileSize - 1)) + (_y * 2);
 
-				draw_set_colour(c_white);
 				draw_rectangle(x1, y1, x2, y2, true);
 	        }
 	    }

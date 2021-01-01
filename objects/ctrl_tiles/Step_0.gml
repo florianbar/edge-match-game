@@ -1,4 +1,19 @@
-/// @description check for tile matches
+//if (!active) exit;
+
+if (tileAChanginPosition != noone
+	&& tileBChanginPosition != noone
+	&& tileAChanginPosition.state == o_tile.STATE_TYPES.IDLE
+	&& tileBChanginPosition.state == o_tile.STATE_TYPES.IDLE
+) {
+	// Change tile position in grid
+	_swapTilePositionsOnGrid(gridRef, tileAChanginPosition.tileId, tileBChanginPosition.tileId);
+	
+	selectedTile = noone;
+	tileAChanginPosition = noone;
+	tileBChanginPosition = noone;
+	
+	global.moveCount += 1;
+}
 
 var correctOrder = true;
 
@@ -77,6 +92,8 @@ for (var _y = 0; _y < ds_grid_height(gridRef); _y++)
 	if (!correctOrder) break;
 }
 
-if (correctOrder) {
-	activeTile = noone;
+if (correctOrder) 
+{
+	//selectedTile = noone;
+	//instance_create_depth(0, 0, -100000, o_levelCompleteModal);
 }

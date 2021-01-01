@@ -1,5 +1,7 @@
-switch(action) {
-	case ACTION_TYPES.ROTATING:
+if (!active) exit;
+
+switch(state) {
+	case STATE_TYPES.ROTATING:
 		var tileAngle = _getUpdatedAngle(image_angle, rotateSpeed * rotateDir);
 		  
 		if (
@@ -8,11 +10,9 @@ switch(action) {
 			|| (rotateDir == ROTATION_DIRECTIONS.CLOCKWISE && abs(tileAngle - endAngle) > rotateSpeed)
 		) {
 			image_angle = tileAngle;
-		} 
-		else {
+		} else {
 			image_angle = endAngle;
-			action = ACTION_TYPES.IDLE;
-			global.moveCount += 1;
+			state = STATE_TYPES.IDLE;
 			
 			if (rotateDir == ROTATION_DIRECTIONS.CLOCKWISE) {
 				sides = [sides[3], sides[0], sides[1], sides[2]];
@@ -24,7 +24,7 @@ switch(action) {
 		}
 		break;
 		
-	case ACTION_TYPES.CHANGING_POSITION:
+	case STATE_TYPES.CHANGING_POSITION:
 		depth = initialDepth - 1;
 		
 		var moveDir = point_direction(x, y, endX, endY);
@@ -44,15 +44,13 @@ switch(action) {
 		y += vsp;
 		
 		if (x == endX && y == endY) {
-			action = ACTION_TYPES.IDLE;
+			state = STATE_TYPES.IDLE;
 		}
 
 		break;
 		
 	default:		
-		depth = ctrl_tiles.activeTile == id ? 
-			initialDepth - 1 
-			: initialDepth;
+		depth = ctrl_tiles.selectedTile == id ? initialDepth - 1 : initialDepth;
 		
 		break;
 }
