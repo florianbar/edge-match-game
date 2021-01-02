@@ -1,2 +1,4 @@
-global.moveCount = 0;
-global.bestMoveCount = 0;
+moveCount = 0;
+bestMoveCount = 0;
+
+showLevelCompleteModal = false;

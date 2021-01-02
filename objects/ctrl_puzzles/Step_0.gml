@@ -1,6 +1,7 @@
 /// @description create puzzle instance
 if (currentPuzzleIndex != nextPuzzleIndex 
 	&& nextPuzzleIndex < ds_list_size(puzzles)
+	|| reloadCurrentPuzzle
 ) {
 	// Destroy previous puzzle instance
 	if (currentPuzzleIndex > -1 
@@ -11,7 +12,7 @@ if (currentPuzzleIndex != nextPuzzleIndex
 	}
 	
 	// Reset move count
-	global.moveCount = 0;
+	ctrl_game.moveCount = 0;
 	
 	var puzzle = instance_create_depth(x, y, -1, puzzles[| nextPuzzleIndex]);
 	with (puzzle) {
@@ -19,4 +20,5 @@ if (currentPuzzleIndex != nextPuzzleIndex
 	}
 	
 	currentPuzzleIndex = nextPuzzleIndex;
+	reloadCurrentPuzzle = false;
 }

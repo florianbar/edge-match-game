@@ -1,4 +1,4 @@
-global.bestMoveCount = 1;
+ctrl_game.bestMoveCount = 1;
 
 /* Tutorial:
  * - teach the player that they can rotate a tile to find a match
@@ -21,7 +21,7 @@ tile1[? "sides"] = [[1,3], [1,2], [1,3], [1,3]];
 
 tile2 = ds_map_create();
 tile2[? "instanceId"] = noone;
-tile2[? "sides"] = [[1,2], [1,4], [1,2], [1,3]];
+tile2[? "sides"] = [[1,2], [0,0], [1,2], [0,0]];
 
 tile3 = ds_map_create();
 tile3[? "instanceId"] = noone;

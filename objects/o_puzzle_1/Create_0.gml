@@ -1,4 +1,4 @@
-global.bestMoveCount = 1;
+ctrl_game.bestMoveCount = 1;
 
 /* Tutorial:
  * - show the player that you cannot match 2 blank sides

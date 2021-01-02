@@ -19,12 +19,14 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_levelCompleteModal","path":"objects/o_levelCompleteModal/o_levelCompleteModal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"o_levelCompleteModal","path":"objects/o_levelCompleteModal/o_levelCompleteModal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"parent":{"name":"o_levelCompleteModal","path":"objects/o_levelCompleteModal/o_levelCompleteModal.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI",
-    "path": "folders/Objects/UI.yy",
+    "name": "ui",
+    "path": "folders/Objects/ui.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_levelCompleteModal",

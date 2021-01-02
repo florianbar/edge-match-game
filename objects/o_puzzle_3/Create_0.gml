@@ -1,4 +1,4 @@
-global.bestMoveCount = 2;
+ctrl_game.bestMoveCount = 2;
 
 /* Tutorial:
  * - teach the player that they can rotate a tile to find a match
