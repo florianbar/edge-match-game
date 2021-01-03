@@ -17,11 +17,11 @@ gridY = (room_height - (ds_grid_height(grid) * tileSize)) / 2;
 // Setup individual tiles
 tile1 = ds_map_create();
 tile1[? "instanceId"] = noone;
-tile1[? "sides"] = [[1,3], [0,0], [1,4], [1,1]];
+tile1[? "sides"] = [[1,3], [1,3], [1,3], [1,1]];
 
 tile2 = ds_map_create();
 tile2[? "instanceId"] = noone;
-tile2[? "sides"] = [[1,2], [1,1], [1,3], [0,0]];
+tile2[? "sides"] = [[1,4], [1,1], [1,4], [1,4]];
 
 // Combine tiles into one map
 tiles = ds_map_create();

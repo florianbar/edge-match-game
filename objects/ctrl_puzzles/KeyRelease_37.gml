@@ -1,2 +1,2 @@
 /// @description move to previous puzzle
-//_goToPrevPuzzle()
+_goToPrevPuzzle();

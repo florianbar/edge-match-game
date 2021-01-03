@@ -18,7 +18,7 @@ if (tileAChanginPosition != noone
 if (_checkCorrectOrder(gridRef, tilesRef)) {
 	active = false;
 	selectedTile = noone;
-	alarm[0] = room_speed * 0.35;
+	alarm[0] = room_speed * 0.5;
 }
 
 // Show or hide rotational buttons
